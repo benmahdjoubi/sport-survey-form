@@ -1,0 +1,126 @@
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+
+<style>
+
+    #main {
+        background-color: rgb(110, 50, 100);
+    }
+
+    #title {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    #description {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    #name-label {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    #email-label {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    #number-label {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    #survey-form {
+        background-color: rgb(90, 50, 120);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: whitesmoke;
+    }
+
+    #submit {
+        background-color: rgb(50, 200, 110);
+        align-self: center;
+    }
+
+    #name {
+        width: 99%;
+    }
+
+    #email {
+        width: 99%;
+    }
+
+    #number {
+        width: 99%;
+        height: auto;
+    }
+
+    #dropdown {
+        width: 99%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    }
+  
+  #Additional-comments {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+}
+
+</style>
+
+
+<main id="main">
+    <h1 id="title">
+        <center>Sport survey form</center>
+    </h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form">
+        <br/><label id="name-label" for="Name">Name</label><br/>
+        <input id="name" type="text" name="name" placeholder="Name" required><br/><br/>
+        <label id="email-label" for="Email">Email</label><br/>
+        <input type="email" id="email"
+       pattern=".+@.*.com" size="30" placeholder="Email" required><br/><br/>
+        <label id="number-label" for="Number">Number</label><br/>
+        <input id="number" type="number" min="1" max="10" placeholder="Number" required><br/><br/>
+        <select id="dropdown">
+            <option selected disabled hidden> Select your prefered activity</option>
+            <option value="Martial arts">Martial arts</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Running">Running</option>
+        </select>
+        <p>Would you recommand practicing sport to someone?</p>
+        <fieldset>
+            <input id="Definitely" type="radio" name="levels" value="Definitely">
+            <label for="Definitely">Definitely</label><br>
+            <input id="Maybe" type="radio" name="levels" value="Maybe">
+            <label for="intermediate">Maybe</label><br>
+            <input id="Not sure" type="radio" name="levels" value="Not sure">
+            <label for="master">Note sure</label>
+        </fieldset>
+        <fieldset>
+            <p>What is your training schedule?</p>
+            <input id="Daily training" type="checkbox" name="Daily training" value="Daily training" > 
+            <label for="Daily training">Daily training</label>
+            <input id="Weekly training" type="checkbox" name="Weekly training" value="Weekly training" > 
+            <label for="Weekly">Weekly training</label>
+            <input id="Monthly training" type="checkbox" name="Monthly training" value="Monthly training" > 
+            <label for="Monthly training">Monthly training</label>
+        </fieldset>
+        <p>Any additional comments or suggestions?</p>
+        <textarea id="Additional-comments" rows="4" cols="100%">Enter your comments here...</textarea><br/>
+        <button id="submit">Submit</button>
+    </form>
+</main>
+<html>
